@@ -137,16 +137,7 @@ describe "#display_board in 'lib/display_board.rb" do
     end
 
     it 'prints an entire board full of Xs' do
-      # Should you want to write your own test for this situation,
-      # read the following code and comments.
-
-      # Can you copy the syntax of the tests above to write a test for a board
-      # entirely filled with Xs?"
-
-      # Define the board with values that should create the desired output
-      # *** Edit the line below ***
       board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
-
 
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
@@ -163,11 +154,11 @@ describe "#display_board in 'lib/display_board.rb" do
       # Then edit the following lines to represent a board entirely filled with X.
       # Remember, every space and every character is important.
 
-      expect(rows[0]).to eq("   |   |   ")
+      expect(rows[0]).to eq(" X | X | X ")
       expect(rows[1]).to eq("-----------")
-      expect(rows[2]).to eq("   |   |   ")
+      expect(rows[2]).to eq(" X | X | X ")
       expect(rows[3]).to eq("-----------")
-      expect(rows[4]).to eq("   |   |   ")
+      expect(rows[4]).to eq(" X | X | X ")
 
       # *** Comment the line below by adding a # at the line start ***
       expect(true).to be(true)
